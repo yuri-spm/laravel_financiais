@@ -23,7 +23,7 @@ class AccountResource extends Resource
 
     protected static ?string $navigationGroup = 'Cadastro';
 
-        protected static ?string $navigationLabel = 'Gastos';
+        protected static ?string $navigationLabel = 'Contas';
 
     public static function form(Form $form): Form
     {

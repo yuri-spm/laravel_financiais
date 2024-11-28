@@ -71,8 +71,8 @@ class UserResource extends Resource
                         'user' => 'success',
                        
                     }),
-                Tables\Columns\IconColumn::make('is_active')
-                    ->boolean(),
+                    Tables\Columns\ToggleColumn::make('is_active')
+                    ->label('Ativo'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

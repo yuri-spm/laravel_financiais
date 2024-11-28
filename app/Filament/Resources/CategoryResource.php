@@ -45,9 +45,8 @@ class CategoryResource extends Resource
                 Tables\Columns\TextColumn::make('name')
                     ->label('Nome da Categoria')
                     ->searchable(),
-                Tables\Columns\IconColumn::make('is_active')
-                    ->label('Ativo')
-                    ->boolean(),
+                Tables\Columns\ToggleColumn::make('is_active')
+                    ->label('Ativo'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

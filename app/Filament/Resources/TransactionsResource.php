@@ -101,9 +101,8 @@ class TransactionsResource extends Resource
                     ->label('Usuário')
                     ->numeric()
                     ->sortable(),
-                Tables\Columns\IconColumn::make('is_recurring')
-                    ->label('Recorrente')
-                    ->boolean(),
+                Tables\Columns\ToggleColumn::make('is_recurring')
+                    ->label('Recorrente'),
                 Tables\Columns\TextColumn::make('attachment')
                     ->label('Anexo')
                     ->searchable(),
